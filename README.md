@@ -82,22 +82,45 @@ http-server
 
 遊戲使用瀏覽器的 LocalStorage 功能自動保存最高分，關閉瀏覽器後數據不會丟失。
 
+## 🐍 Python 版本 (Pygame)
+
+除了網頁版，我們還提供了一個功能更豐富的 Python 版本。
+
+### 🛠️ 環境要求
+- Python 3.x
+- Pygame 庫
+
+### 🚀 如何運行 Python 版本
+
+#### Windows
+1. 安裝 Python (從 python.org)
+2. 打開終端或命令提示符，運行：
+   ```bash
+   pip install pygame
+   python snake_game.py
+   ```
+
+#### Linux / macOS
+1. 確保已安裝 Python 3
+2. 運行啟動腳本：
+   ```bash
+   chmod +x run_game.sh
+   ./run_game.sh
+   ```
+
+### 🎮 Python 版控制方式
+- **方向鍵**：控制蛇的移動
+- **C 鍵**：遊戲結束後重新開始
+- **Q 鍵**：遊戲結束後退出
+
 ## 📝 代碼結構
 
 ```
-index.html
-├── HTML 結構
-├── CSS 樣式
-│   ├── 容器和佈局
-│   ├── 按鈕和控制
-│   ├── 遊戲信息展示
-│   └── 響應式設計
-└── JavaScript 邏輯
-    ├── 遊戲初始化
-    ├── 遊戲循環
-    ├── 碰撞檢測
-    ├── 分數管理
-    └── UI 交互
+.
+├── index.html          # 網頁版 (HTML5/JS)
+├── snake_game.py       # Python 版 (Pygame)
+├── run_game.sh         # Linux/macOS 啟動腳本
+└── README.md           # 項目說明文檔
 ```
 
 ## 🎓 學習資源
